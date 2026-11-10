@@ -6,7 +6,7 @@ Individually installable agent skills, primarily for Hermes workflows. Each pack
 
 | Skill | Version | Purpose |
 | --- | --- | --- |
-| [writing-skills](skills/writing-skills/SKILL.md) | 0.6.0 | Author and maintain Hermes skills; locate explicit runtime/profile targets and check installation conflicts |
+| [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | Author and maintain Hermes skills; locate explicit runtime/profile targets and check installation conflicts |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | Create mailboxes, read messages, extract codes and manage mail through cloudflare_temp_email; sending and other features depend on server configuration |
 
 ## Install into Hermes
@@ -54,7 +54,11 @@ they do not connect to real servers, create mailboxes or send messages. Validate
 ## Maintenance and provenance
 
 This repository is the collection's maintenance and publishing source. Keep each skill's `metadata.version` independent.
-Apply changes here and explicitly update deployed client copies. The original workstation and application-repository copies do not automatically update when this repository is pushed.
+Maintain the local checkout at `~/projects/agent-skills/`. The owner's local Codex writing-skills installation links directly to this source.
+Independent client installations and the original application-repository copy still need explicit updates.
+
+Before editing writing-skills, retain one previous directory backup at `~/.local/state/writing-skills/backups/previous`.
+Verify the replacement backup before retiring the older copy. Keep backups outside Git and skill discovery directories.
 
 Only the two general skills are included. `cf-temp-mail-agent-read` is a separate personal reader and is not part of this collection.
 The mailbox application remains independent; see [provenance and licenses](NOTICE.md).

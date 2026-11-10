@@ -6,7 +6,7 @@
 
 | 技能 | 版本 | 用途 |
 | --- | --- | --- |
-| [writing-skills](skills/writing-skills/SKILL.md) | 0.6.0 | 编写和维护 Hermes 技能；查询指定运行实例、profile 及安装位置，检查同名冲突 |
+| [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | 编写和维护 Hermes 技能；查询指定运行实例、profile 及安装位置，检查同名冲突 |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | 通过 cloudflare_temp_email API 创建邮箱、读信、提取验证码及管理邮件；发信等功能取决于服务端配置 |
 
 ## 安装到 Hermes
@@ -54,7 +54,11 @@ GitHub Actions 在 push 和 pull request 时运行这些检查。单元测试使
 ## 维护与来源
 
 本仓库是集合的维护和发布入口。每个技能保留独立的 `metadata.version`；修复在这里进行，
-然后显式更新需要使用它的客户端副本。最初导入的本机和应用仓库副本不会自动随 Git 推送更新。
+本机维护目录为 `~/projects/agent-skills/`。本机 Codex 的 writing-skills 通过符号链接直接使用这里的源码；
+独立安装的客户端和原应用仓库副本仍需显式更新。
+
+writing-skills 修改前保留一份上一版目录备份：`~/.local/state/writing-skills/backups/previous`。
+先验证新备份完整，再替换旧备份；备份留在仓库和技能发现目录之外。
 
 本仓库只收录两个通用技能；`cf-temp-mail-agent-read` 是独立的个人读取技能，不包含在本集合中。
 邮箱项目本身保持独立，详见 [来源与许可证](NOTICE.md)。

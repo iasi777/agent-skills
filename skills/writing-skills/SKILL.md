@@ -3,7 +3,7 @@ name: writing-skills
 description: "Use when creating, revising, splitting, or reviewing a workflow skill for Hermes: defining executable steps, writing a description that triggers reliably, or deciding what belongs in SKILL.md versus bundled files. Also use when someone says 'turn this workflow into a skill' or 'my skill never fires'. Not for one-off prompts, always-on project instructions, or MCP tool schemas."
 license: MIT
 metadata:
-  version: "0.6.0"
+  version: "0.7.0"
 ---
 
 # writing-skills
@@ -13,6 +13,15 @@ base, with Hermes extensions where needed. Keep reusable procedures separate
 from task configuration and runtime data.
 
 ## 1. Authoring workflow
+
+For this collection, maintain source in `~/projects/agent-skills/skills/`
+(on the owner's workstation: `/home/tang/projects/agent-skills/skills/`).
+The publishing repository is `https://github.com/iasi777/agent-skills`.
+Before editing, resolve any installed skill symlink and work in this checkout;
+new collection skills also belong here. On another machine, locate the checkout
+or ask for its location instead of assuming the owner's absolute path exists.
+Client installations are links or deployment copies, not independent sources.
+
 
 1. Collect the intended workflow, inputs, outputs, and available real-run feedback.
 2. Draft the name and description using section 2.
@@ -151,6 +160,22 @@ check compatibility for each intended client.
 - [ ] Delivery report distinguishes authored files from deployed files.
 
 ## 7. Maintenance from actual use
+
+Keep one previous directory backup of writing-skills at
+`~/.local/state/writing-skills/backups/previous`, outside the repository and
+client skill discovery paths. Before changing or replacing the maintained skill,
+copy its current directory into a temporary sibling, verify the file manifest,
+then rotate that verified copy into `previous`. Retain the older backup until
+the new copy is verified; do not accumulate timestamped backups or remove
+unrelated archives. Resolve symlinks and back up the full source directory.
+
+The owner's `~/.codex/skills/writing-skills` links to the checkout's
+`skills/writing-skills/`. Keep that link valid; editing the checkout updates the
+local installation immediately. To recover, compare and restore backup contents
+to the source directory while preserving the link. After edits, run the collection's
+README checks and update its bilingual changelog. Commit/push and remote profile
+deployment follow the user's existing authorization; one does not imply the other.
+
 
 Use actual Hermes execution and specific user feedback to identify changes.
 Record the failed step, expected result, observed result, and useful evidence
