@@ -8,6 +8,9 @@ Individually installable agent skills, primarily for Hermes workflows. Each pack
 | --- | --- | --- |
 | [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | Author and maintain Hermes skills; locate explicit runtime/profile targets and check installation conflicts |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | Create mailboxes, read messages, extract codes and manage mail through cloudflare_temp_email; sending and other features depend on server configuration |
+| [github](skills/github/SKILL.md) | 2.0.1 | Local backup of the GitHub component, including PR session identity instructions and excluding gpt's custom deployed-issue tracking rules |
+
+`github` is distributed with this collection. Install or restore the complete directory; see [NOTICE.md](NOTICE.md) for provenance and licensing.
 
 ## Install into Hermes
 
@@ -60,7 +63,7 @@ Independent client installations and the original application-repository copy st
 Before editing writing-skills, retain one previous directory backup at `~/.local/state/writing-skills/backups/previous`.
 Verify the replacement backup before retiring the older copy. Keep backups outside Git and skill discovery directories.
 
-Only the two general skills are included. `cf-temp-mail-agent-read` is a separate personal reader and is not part of this collection.
+The general skills listed above are included. `cf-temp-mail-agent-read` is a separate personal reader and is not part of this collection.
 The mailbox application remains independent; see [provenance and licenses](NOTICE.md).
 
 Add individually installable packages under `skills/<name>/`. See [CHANGELOG_EN.md](CHANGELOG_EN.md) for changes.
