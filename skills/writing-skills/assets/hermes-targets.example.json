@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "default_target": "primary",
+  "targets": {
+    "primary": {
+      "transport": "ssh",
+      "host": "your-ssh-alias",
+      "container": "hermes",
+      "hermes_root": "/opt/hermes",
+      "python": "/opt/hermes/.venv/bin/python",
+      "data_root": "/opt/data"
+    }
+  }
+}

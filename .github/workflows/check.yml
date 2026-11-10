@@ -1,0 +1,20 @@
+name: Check skills
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python3 -B scripts/check.py
+      - run: python3 -B -m unittest discover -s skills/writing-skills/tests -v
+      - run: python3 -B skills/cf-temp-mail-agent-mail/scripts/mailbox.py --help
