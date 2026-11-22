@@ -6,6 +6,7 @@
 
 | 技能 | 版本 | 用途 |
 | --- | --- | --- |
+| [implement-spec](skills/implement-spec/SKILL.md) | 1.0.0 | 按工单依赖调度实现，在同一集成分支合并并审查规格的实现 |
 | [maintaining-project-docs](skills/maintaining-project-docs/SKILL.md) | 1.0.0 | 审阅和整理项目文档，核对现行说明、历史记录和操作入口 |
 | [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | 编写和维护 Hermes 技能；查询指定运行实例、profile 及安装位置，检查同名冲突 |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | 通过 cloudflare_temp_email API 创建邮箱、读信、提取验证码及管理邮件；发信等功能取决于服务端配置 |

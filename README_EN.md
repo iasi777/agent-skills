@@ -6,6 +6,7 @@ Individually installable agent skills, primarily for Hermes workflows. Each pack
 
 | Skill | Version | Purpose |
 | --- | --- | --- |
+| [implement-spec](skills/implement-spec/SKILL.md) | 1.0.0 | Implement tickets in dependency order, then integrate and review the spec on one branch |
 | [maintaining-project-docs](skills/maintaining-project-docs/SKILL.md) | 1.0.0 | Review and maintain project documentation, including current guidance, historical records and task entry points |
 | [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | Author and maintain Hermes skills; locate explicit runtime/profile targets and check installation conflicts |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | Create mailboxes, read messages, extract codes and manage mail through cloudflare_temp_email; sending and other features depend on server configuration |

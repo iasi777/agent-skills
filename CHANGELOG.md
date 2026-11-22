@@ -2,6 +2,8 @@
 
 ## 未发布
 
+- feat: 收录 implement-spec 1.0.0，包含工单基线核对、协调与等待流程。
+
 - feat: 收录项目文档整理技能 maintaining-project-docs 1.0.0。
 
 - chore: 备份默认 profile 的 github 2.0.1 完整组件，保留 PR 身份提示，排除 gpt 专属 Issue 跟进定制，附上游 MIT 许可证。

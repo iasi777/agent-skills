@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- feat: Add implement-spec 1.0.0 with ticket base verification, coordination and wait procedures.
+
 - feat: Add maintaining-project-docs 1.0.0 for reviewing and maintaining project documentation.
 
 - chore: Back up the complete default-profile github 2.0.1 component, retain PR identity instructions, exclude gpt-specific issue tracking customization, and include the upstream MIT license.

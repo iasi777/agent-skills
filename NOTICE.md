@@ -26,3 +26,9 @@ LICENSE was added for redistribution. No runtime configuration or credentials ar
 
 仓库新增内容采用根目录 MIT 许可证。邮箱技能源自上述上游项目的本地扩展，技能目录中保留完整上游版权与许可。
 writing-skills 来自已有的本地 MIT 技能。第三方服务的名称不表示其维护者为本仓库背书。
+
+`implement-spec` is a local revision of [Matt Pocock's skill](https://github.com/mattpocock/skills/tree/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/implement-spec).
+The package includes the revised workflow documentation and preserves the upstream
+[MIT license](skills/implement-spec/LICENSE), Copyright (c) 2026 Matt Pocock.
+
+`implement-spec` 源自 Matt Pocock 的同名技能，包含本地修订的工作流说明，保留上游 MIT 许可证。
