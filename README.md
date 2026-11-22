@@ -6,6 +6,7 @@
 
 | 技能 | 版本 | 用途 |
 | --- | --- | --- |
+| [maintaining-project-docs](skills/maintaining-project-docs/SKILL.md) | 1.0.0 | 审阅和整理项目文档，核对现行说明、历史记录和操作入口 |
 | [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | 编写和维护 Hermes 技能；查询指定运行实例、profile 及安装位置，检查同名冲突 |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | 通过 cloudflare_temp_email API 创建邮箱、读信、提取验证码及管理邮件；发信等功能取决于服务端配置 |
 | [github](skills/github/SKILL.md) | 2.0.1 | GitHub 组件的本地备份；含 PR 会话身份提示，不含 gpt 专属的已部署 Issue 跟进规范 |
@@ -57,7 +58,7 @@ GitHub Actions 在 push 和 pull request 时运行这些检查。单元测试使
 ## 维护与来源
 
 本仓库是集合的维护和发布入口。每个技能保留独立的 `metadata.version`；修复在这里进行，
-本机维护目录为 `~/projects/agent-skills/`。本机 Codex 的 writing-skills 通过符号链接直接使用这里的源码；
+本机维护目录为 `~/projects/agent-skills/`。本机 Codex 的 writing-skills 和 maintaining-project-docs 通过符号链接直接使用这里的源码；
 独立安装的客户端和原应用仓库副本仍需显式更新。
 
 writing-skills 修改前保留一份上一版目录备份：`~/.local/state/writing-skills/backups/previous`。

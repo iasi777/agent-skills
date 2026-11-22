@@ -6,6 +6,7 @@ Individually installable agent skills, primarily for Hermes workflows. Each pack
 
 | Skill | Version | Purpose |
 | --- | --- | --- |
+| [maintaining-project-docs](skills/maintaining-project-docs/SKILL.md) | 1.0.0 | Review and maintain project documentation, including current guidance, historical records and task entry points |
 | [writing-skills](skills/writing-skills/SKILL.md) | 0.7.0 | Author and maintain Hermes skills; locate explicit runtime/profile targets and check installation conflicts |
 | [cf-temp-mail-agent-mail](skills/cf-temp-mail-agent-mail/SKILL.md) | 1.0.0 | Create mailboxes, read messages, extract codes and manage mail through cloudflare_temp_email; sending and other features depend on server configuration |
 | [github](skills/github/SKILL.md) | 2.0.1 | Local backup of the GitHub component, including PR session identity instructions and excluding gpt's custom deployed-issue tracking rules |
@@ -57,7 +58,7 @@ they do not connect to real servers, create mailboxes or send messages. Validate
 ## Maintenance and provenance
 
 This repository is the collection's maintenance and publishing source. Keep each skill's `metadata.version` independent.
-Maintain the local checkout at `~/projects/agent-skills/`. The owner's local Codex writing-skills installation links directly to this source.
+Maintain the local checkout at `~/projects/agent-skills/`. The local Codex installations of writing-skills and maintaining-project-docs link directly to this source.
 Independent client installations and the original application-repository copy still need explicit updates.
 
 Before editing writing-skills, retain one previous directory backup at `~/.local/state/writing-skills/backups/previous`.
